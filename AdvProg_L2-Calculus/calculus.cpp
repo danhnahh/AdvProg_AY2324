@@ -20,11 +20,7 @@ double mySqrt(double x);
 ***/
 double myCos(double x) 
 {
-    double cosx=0;
-    for(int i=0;i<16;i++){
-        cosx += (i % 2 == 0 ? 1 : -1) * pow(x, 2 * i) / tgamma(2 * i + 1);
-    }
-    return cosx;
+    return 0.0;
 }
 
 /***
@@ -35,11 +31,7 @@ double myCos(double x)
 ***/
 double mySin(double x)
 {
-    double sinx=0;
-    for(int i=0;i<16;i++){
-        sinx += (i % 2 == 0 ? 1 : -1) * pow(x, 2 * i+1) / tgamma(2 * i + 1+1);
-    }
-    return sinx;
+    return 0.0;
 }
 
 
@@ -54,10 +46,7 @@ double mySqrt(double x) {
         cout << "Invalid argument" << endl;
         exit(1);
     }
-    double k=x;
-    for(int i=0;i<10;i++){
-        k=(k+x/k)/2;
-    }
+
     
-    return k;
+    return 0;
 }
